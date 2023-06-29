@@ -1,0 +1,17 @@
+Dependency injection-The data initialization depends on another class that we are going to inject using spring framework.
+		    -It is pattern through which IOC is achieved.
+		    -Spring core module is responsible for injecting dependencies through either constructor or setter method.
+pre-requisite-Spring IOC Concept
+
+
+Dependency Injection Types-DI Literal
+			  -DI Obj
+			  -DI Collection
+We can achieve Dependency Injection by 2 ways-Setters(beans.xml<property>)   
+					     -Constructor(beans.xml<constructor-arg>)
+setterDI-->poor readability(boilerplate code)
+	 ->must include getter and setter
+
+constructor DI-->good readability
+	       ->bean class must declare a matching constructor with argument.
+		

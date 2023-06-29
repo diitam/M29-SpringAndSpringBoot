@@ -1,0 +1,30 @@
+SPring Framework-It is a framework where we can develop java application
+benifit-simplicity
+	-testability
+	-loose coupling(it allows u to change the implementation of two related 			objects without affecting other objects).
+
+Spring IO platform has 3 layers
+1. Foundation Layer-it contains set of APIs which can be used to build an application
+
+2.Coordination Layer-provides APIs to connect with cloud services with spring cloud
+
+3.Execution Layer helps to avoid deployment to an external container like tomcat server
+-------------------------------------------------------------------------------------
+what is IOC(Inversion Of Control)
+-IOC,it is heart of spring framework
+-Inversion of responsibility with regard to how an object contain references to collaborating objects .
+
+Agenda of springIOC
+-we should not touch source code 
+-this application is configurable ie...it should be upgradable
+
+
+spring framework-can create object for u using getbean("a") method
+		-it can manage objects for u.
+
+IOC Container-
+1.Bean Factory
+2.Application Context
+
+To implement all the methods which is inside that interface we have implementable class-ClassPathXmlApplicationContext
+
