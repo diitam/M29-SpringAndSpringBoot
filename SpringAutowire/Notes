@@ -1,0 +1,9 @@
+SpringBean Autowiring
+-The spring Framework can inject dependencies automatically using Spring autowire  concept.
+
+The modes of autowire
+1.No->It is default that is there is no autowiring in spring bean
+
+2.byName->By name autowiring by property name will look for a bean named exactly the same as the property that need to be autowired
+3.byType->
+4.constructor-->needs to have constructor
