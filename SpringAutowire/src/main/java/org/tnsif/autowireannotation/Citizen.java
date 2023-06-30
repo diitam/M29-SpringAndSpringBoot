@@ -1,0 +1,25 @@
+package org.tnsif.autowireannotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Citizen {
+
+	//DI in form of objects
+	private MunicipalCorporation mc;
+	@Autowired
+	@Qualifier("m2")   //for multiple bin for same bean id
+	public MunicipalCorporation getMc() {
+		return mc;
+	}
+
+	public void setMc(MunicipalCorporation mc) {
+		this.mc = mc;
+	}
+	public void display()
+	{
+		mc.corporate();
+		System.out.println("Result: "+mc.getMayorName()+" "+mc.getArea());
+	}
+	
+}
