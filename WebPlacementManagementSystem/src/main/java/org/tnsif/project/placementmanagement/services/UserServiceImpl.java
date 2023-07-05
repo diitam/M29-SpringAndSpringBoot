@@ -5,8 +5,10 @@ import org.springframework.stereotype.Service;
 import org.tnsif.project.placementmanagement.entities.User;
 import org.tnsif.project.placementmanagement.repository.UserRepository;
 
-@Service
+import jakarta.transaction.Transactional;
 
+@Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
     @Autowired
@@ -27,7 +29,9 @@ public class UserServiceImpl implements UserService {
         if (user != null && user.getUserpassword().equals(password)) {
             loggedInUser = user;
             return user;
-        } else {
+        } 
+        else 
+        {
             throw new RuntimeException("Invalid username or password");
         }
     }
